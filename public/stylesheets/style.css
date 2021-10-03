@@ -1,0 +1,20 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.logo {
+  width: 24px;
+}
+
+.container {
+  margin: 24px;
+}
+
+.footer {
+  margin-top: 36px;
+  padding: 24px;
+}
