@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title><%= title %></title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <%- include('../partials/header'); -%>
+  <div class="container center-flex projects-container">
+    <%- include('../partials/project', { title: 'General Programming', img: 'project1', role: 'Developer', desc: 'As the development work of general programming, I completed some general tool programming, such as unit conversion, exchange rate conversion, mathematical calculation and other simple tools.' }); -%>
+    <%- include('../partials/project', { title: 'Web Development', img: 'project2', role: 'Design and developer', desc: 'As the main development work of network development, use software to design page style. And develop pages based on html, css and js, and realize functions.' }); -%>
+    <%- include('../partials/project', { title: 'Mobile Apps', img: 'project3', role: 'Dominant', desc: 'It mainly designs and develops mobile applications, from functional design to requirements arrangement, to data structure design and application development. Mainly based on React-native, the page application is developed to realize the compatibility between Android and IOS.' }); -%>
+  </div>
+  <%- include('../partials/footer'); -%>
+</body>
+
+</html>

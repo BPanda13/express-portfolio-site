@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <%- include('../partials/header'); -%>
+    <div class="container">
+      <!-- contact information -->
+      <div class="well">
+        <address>
+          <abbr title="Phone">P:</abbr> 6473812703
+        </address>
+        <address>
+          <strong>Email</strong><br>
+          <a href="mailto:#">b380298403@gmail.com</a>
+        </address>
+      </div>
+      <!-- contact me form -->
+      <form class="form-horizontal" action="/contact-me" method="POST">
+        <div class="form-group">
+          <label for="firstName" class="col-sm-2 control-label">First Name</label>
+          <div class="col-sm-10">
+            <input type="text" name="firstName" class="form-control" id="firstName" placeholder="First Name">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="lastName" class="col-sm-2 control-label">Last Name</label>
+          <div class="col-sm-10">
+            <input type="text" name="lastName" class="form-control" id="lastName" placeholder="Last Name">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="contactNumber" class="col-sm-2 control-label">Contact Number</label>
+          <div class="col-sm-10">
+            <input type="text" name="contactNumber" class="form-control" id="contactNumber" placeholder="Contact Number">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email" class="col-sm-2 control-label">Email Address</label>
+          <div class="col-sm-10">
+            <input type="email" name="email" class="form-control" id="email" placeholder="Email Address">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message" class="col-sm-2 control-label">Message</label>
+          <div class="col-sm-10">
+            <textarea class="form-control" name="message" id="message" placeholder="Message"></textarea>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <%- include('../partials/footer'); -%>
+</body>
+
+</html>
